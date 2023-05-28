@@ -1,0 +1,8 @@
+<div class="note-list">
+
+  <note *ngFor="let note of notes" (delete)="deleteNote($event)"
+        [id]="note.id"
+        [head]="note.head"
+        [body]="note.body"> </note>
+
+</div>

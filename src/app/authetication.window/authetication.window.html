@@ -1,0 +1,24 @@
+<div class="window">
+
+  <form [formGroup]="myForm" novalidate >
+
+    <div class="">
+      <input placeholder="Login" formControlName="Login" [(ngModel)]="user.login">
+      <div
+        *ngIf="myForm.controls['Login'].invalid
+      && myForm.controls['Login'].touched" class="invalid--style">
+        Enter the correct Login
+      </div>
+    </div>
+
+    <div class="">
+      <input placeholder="Password" formControlName="Password" [(ngModel)]="user.password">
+      <div
+        *ngIf="myForm.controls['Password'].invalid
+      && myForm.controls['Password'].touched" class="invalid--style">
+        Enter the correct Password
+      </div>
+    </div>
+    <button class="button" (click)="authetication()">Send</button>
+  </form>
+</div>

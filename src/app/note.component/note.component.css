@@ -1,0 +1,25 @@
+.note{
+  border: solid aquamarine 3px;
+  padding: 13px;
+  margin: 13px;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.button{
+  margin: 10px;
+  width: 80px;
+  height: 25px;
+  border: #01afaf solid 3px;
+  border-radius: 15px;
+}
+
+
+.button:active{
+  margin: 10px;
+  width: 80px;
+  height: 25px;
+  border: #007070 solid 3px;
+  background-color:  #00d0d0;
+  border-radius: 15px;
+}
