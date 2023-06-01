@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "mynotes-1f05a"
+  },
+  "targets": {
+    "mynotes-1f05a": {
+      "hosting": {
+        "learnProject1": [
+          "mynotes-1f05a"
+        ]
+      }
+    }
+  }
+}

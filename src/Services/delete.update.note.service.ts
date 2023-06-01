@@ -15,7 +15,7 @@ export class DeleteUpdateNoteService{
 
 
 
-    return this.httpClient.post('https://localhost:7013/Note/DeleteNote',new HttpParams()
+    return this.httpClient.post('http://1462419-ck65966.tw1.ru:7013/Note/DeleteNote',new HttpParams()
       .set("id",id).set("head",head).set("body",body));
 
 

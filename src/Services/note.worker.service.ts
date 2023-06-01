@@ -18,6 +18,6 @@ export class NoteWorkerService{
 
     const header:HttpHeaders = new HttpHeaders().set("auth",token)
 
-    return this.httpClient.post("https://localhost:7013/Note/AddNewNote",params,{headers:header})
+    return this.httpClient.post("http://1462419-ck65966.tw1.ru:7013/Note/AddNewNote",params,{headers:header})
   }
 }

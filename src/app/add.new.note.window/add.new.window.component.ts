@@ -1,7 +1,5 @@
 import {Component, EventEmitter, Output} from "@angular/core";
 import {NoteWorkerService} from "../../Services/note.worker.service";
-import {NoteComponent} from "../note.component/note.component";
-import {DeleteUpdateNoteService} from "../../Services/delete.update.note.service";
 
 @Component({
   selector: 'add-window',
@@ -24,7 +22,6 @@ export class AddNewWindowComponent{
     requestNewNote(){
       this.noteServices.addNote(this.head,this.body).subscribe({
         next:(data:any)=>{
-          console.log(data)
           this.emitter.emit(data);
         }
       })

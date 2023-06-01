@@ -10,12 +10,12 @@ export class HttpService{
   constructor(private http:HttpClient) {}
 
   Registrate(user:User){
-    return this.http.post('https://localhost:7013/Account/Registrate',
+    return this.http.post('http://1462419-ck65966.tw1.ru:7013/Account/Registrate',
       new HttpParams().set("login", user.login).set("password", user.password));
   }
 
   Authenticate(user:User){
-    return this.http.post('https://localhost:7013/Account/Authenticate',
+    return this.http.post('http://1462419-ck65966.tw1.ru:7013/Account/Authenticate',
       new HttpParams().set("login",user.login).set("password",user.password));
   }
 }

@@ -11,6 +11,8 @@ export class NoteListComponent{
   @Input() notes : NoteComponent[] = [];
   notesBuff : NoteComponent[] = [];
   deleteNote(id:number){
-    this.notes  = this.notes.filter((e,i)=> e.id != id );
+
+    const ind  = this.notes.filter((e,i)=> e.id == id ).map(e => e.id)[0];
+    this.notes = this.notes.splice(ind, 1)
   }
 }
